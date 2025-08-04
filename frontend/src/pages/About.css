@@ -1,0 +1,63 @@
+.about-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/589/630/non_2x/green-background-with-fading-square-and-dots-free-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem;
+  }
+  
+  .about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .about-content h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .about-content p {
+    color: #34495e;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-content {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .about-content h1 {
+      font-size: 2rem;
+    }
+    
+    .about-content p {
+      font-size: 1rem;
+    }
+  }

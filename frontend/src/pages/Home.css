@@ -1,0 +1,50 @@
+.home-container {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/589/630/non_2x/green-background-with-fading-square-and-dots-free-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-image {
+    opacity: 0.2;
+  }
+  
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  .overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 100px 20px;
+    color: hwb(0 100% 0%);
+    font-family: 'Georgia', serif;
+  }
+  
+  .overlay h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .overlay p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: hsla(0, 0%, 100%, 0.866);
+  }
+  
